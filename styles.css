@@ -1,0 +1,136 @@
+:root {
+    --pallette_1: #050404;
+    --pallette_2: #d3d6db;
+    --pallette_3: #453b39;
+    --pallette_4: #757986;
+    --pallette_5: #cf5256;
+    --font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 94vh;font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--pallette_2);
+    color: var(--text-color);
+}
+
+.container
+{
+    min-height: 94vh;
+    display: flex;
+    /*border: 5px solid black;*/
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.div1
+{
+    display: flex;
+    background-color: var(--pallette_2);
+    min-width: 400px;
+    min-height: 700px;
+    flex-grow: 1;
+    position: relative;
+    align-items: space-evenly;
+}
+
+.menu
+{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    text-align: right;
+    line-height: 0.2;
+    font-size: medium;
+}
+.text
+{
+    background-color: var(--pallette_2);
+    width: 35vw;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 3vw;
+    line-height: 0.2;
+    font-weight: 100;
+
+}
+
+.bottom_text
+{
+    background-color: var(--pallette_2);
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    text-align: left;
+    line-height: 0.2;
+}
+
+.div2
+{
+    background-color: var(--pallette_2);
+    min-width: 400px;
+    min-height: 700px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    position: relative;
+}
+
+.video
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    background-color: var(--pallette_2);
+}
+
+.arrow
+{
+    width: 80px;
+    height: 80px;
+    background-color: #db4e3c;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arr
+{
+    font-size: 4rem;
+    color: var(--pallette_2);
+}
+
+@media(max-width:800px)
+{
+    .container
+    {
+        flex-wrap: wrap;
+    }
+    .text
+    {
+        font-size: 4vw;
+        width: 50vw;
+    }
+    .div2
+    {
+        align-items: normal;
+        justify-content: center;
+    }
+    .video
+    {
+        position: absolute;
+        top: 40px;
+        left: 15vw;
+
+    }
+    .arrow
+    {
+        transform: rotate(90deg);
+    }
+}
